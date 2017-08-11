@@ -46,4 +46,6 @@ The rebel attack has begun!  At the moment, all our turrets are still operationa
 
 ### Bonus
 
-1. If you look in Dev Tools, you'll notice it complaining about `dataBanks` not being defined until we get the result back from our API.  Good ol' async JS, right?  You can fix this with a well-placed `*ngIf`.
+1. If you look in Dev Tools, you'll notice it complaining about `dataBanks` not being defined until we get the result back from our API.  Good ol' async JS, right?  You can fix this with a well-placed [`*ngIf`](https://angular.io/guide/cheatsheet)\*.
+
+\*Look for "Built-in Directives"
