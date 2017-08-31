@@ -1,5 +1,10 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
+<!--11:01 WDI4 -->
+
+<!--This is definitely a pair programming activity -->
+<!-- Make sure you demo the fully working info window before devs start coding -->
+
 # Project: The **Full Stack** Death Square
 
 The rebel attack has begun!  At the moment, all our turrets are still operational, but some of them have taken damage.  We need to know which ones are in need of repair.  Luckily for us, this information is available to us in our data banks...we just need to bring it to our dashboard to quickly deploy repair droids.  To the data banks!
@@ -18,7 +23,7 @@ The rebel attack has begun!  At the moment, all our turrets are still operationa
 
 6. Create a `findTurret()` function that passes in a `turretNumber` that looks very similar to our `findCharacter()` function from the previous lesson.  Make your `get` request to the same URL we used in step #2.
 
-6a. Save your JSON results from the `findTurret()` function into a variable called `dataBanks` (not `response` like the `findCharacter()` function). Make sure you declare `dataBanks` at the top of your `InfoWindowComponent` class, first.
+6a. Save your JSON results from the `findTurret()` function into a variable called `dataBanks` (not `results` like the `findCharacter()` function). Make sure you declare `dataBanks` at the top of your `InfoWindowComponent` class, first.
 
 >**Note:** You want to `console.log()` the `response.json()` value before you save it to `dataBanks`.  It **does NOT** have the same format as the Star Wars API response.
 
@@ -49,3 +54,7 @@ The rebel attack has begun!  At the moment, all our turrets are still operationa
 1. If you look in Dev Tools, you'll notice it complaining about `dataBanks` not being defined until we get the result back from our API.  Good ol' async JS, right?  You can fix this with a well-placed [`*ngIf`](https://angular.io/guide/cheatsheet)\*.
 
 \*Look for "Built-in Directives"
+
+<!--11:15 turning over to devs -->
+<!--WDI4 @1225, some folks only through step 5, some folks done with bonus, too -->
+<!--30 more minutes after lunch, then called it quits -->
