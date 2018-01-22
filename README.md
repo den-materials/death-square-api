@@ -45,7 +45,7 @@ The rebel attack has begun. At the moment, all of our turrets are still operatio
 
 17)  Now, let's test it in the browser. Click on the top-left turret. Two damage? Not too bad. Click on the bottom-right turret. Nine damage? Let's get that repair droid on its way.  
 
-### Bonus
+### Debugging Note
 
 If you look in Dev Tools, you'll notice it complaining about `dataBanks` not being defined until we get the result back from our API. You can fix this with a well-placed [`*ngIf`](https://angular.io/guide/cheatsheet)\*.
 
