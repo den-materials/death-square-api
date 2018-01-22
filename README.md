@@ -15,13 +15,11 @@ The rebel attack has begun. At the moment, all of our turrets are still operatio
 
 3) Navigate into `imperial-starfleet` and start up our front end.
 
-4) Import HTTP into the `InfoWindowComponent`, like we did in the previous lesson. Additionally, import the `rxjs` `toPromise` feature.
+4) Import HTTP into the `InfoWindowComponent`, like we did in the previous lesson. Additionally, import the `rxjs` `toPromise` feature, if necessary.
 
 5) Put `http` into the constructor of `InfoWindowComponent`.
 
-6) Create a `findTurret()` function that passes in a `turretNumber` that looks similar to our `findCharacter()` function from the previous lesson. Make your `get` request to the same URL we used in Step 2.
-
-6a) Save your JSON results from the `findTurret()` function in a variable called `dataBanks` (Note: **Not** `results` like the `findCharacter()` function). Make sure you first declare `dataBanks` at the top of your `InfoWindowComponent` class.
+6) Create a `findTurret()` function that passes in a `turretNumber` that looks similar to our `findCharacter()` function from the previous lesson. Make your `get` request to the same URL we used in Step 2. Save your JSON results from the `findTurret()` function in a variable called `dataBanks` (Note: **Not** `results` like the `findCharacter()` function). Make sure you first declare `dataBanks` at the top of your `InfoWindowComponent` class.
 
 >**Note:** You want to `console.log()` the `response.json()` value before you save it to `dataBanks`. It does **NOT** have the same format as the Star Wars API response.
 
@@ -43,7 +41,7 @@ The rebel attack has begun. At the moment, all of our turrets are still operatio
 
 15) Now, we need to handle this new `turretNumber` in the` InfoWindowComponent`. Import `ActivatedRoute` and include it in your `constructor`, like we did in the URL Params lesson.
 
-16) Add a `this.route.paramMap` function and tuck the `this.findTurret()` function inside it, similar to the URL Params lesson. Don't forget to switch out the hard-coded `4` for the `param.id` coming from your route params.
+16) Add a `this.route.params.forEach` function and tuck the `this.findTurret()` function inside it, similar to the URL Params lesson. Don't forget to switch out the hard-coded `4` for the `param.id` coming from your route params.
 
 17)  Now, let's test it in the browser. Click on the top-left turret. Two damage? Not too bad. Click on the bottom-right turret. Nine damage? Let's get that repair droid on its way.  
 
